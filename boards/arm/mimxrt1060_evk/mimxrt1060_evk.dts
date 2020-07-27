@@ -16,6 +16,7 @@
 		led0 = &green_led;
 		sw0 = &user_button;
 		kscan0 = &touch_controller;
+		watchdog0 = &wdog0;
 	};
 
 	chosen {
@@ -144,5 +145,9 @@ arduino_serial: &lpuart3 {};
 };
 
 &edma0 {
+	status = "okay";
+};
+
+&wdog0 {
 	status = "okay";
 };

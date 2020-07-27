@@ -620,6 +620,13 @@
 			status = "disabled";
 			label = "EDMA0";
 		};
+		wdog0: wdog@400b8000 {
+			compatible = "nxp,imx-wdog";
+			reg = <0x400b8000 0xA>;
+			status = "disabled";
+			interrupts = <92 0>;
+			label = "WDOG";
+		};
 	};
 };
 
